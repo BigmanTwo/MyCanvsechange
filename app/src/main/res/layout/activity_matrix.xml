@@ -9,16 +9,48 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.asus.mycanvsechange.MatrixActivity">
 <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
-    <ImageView
+    <com.example.asus.mycanvsechange.TestView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/testview"/>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/matrix_image"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/matrix_image2"/>
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_rotate"
+            android:text="旋转"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_scale"
+            android:text="缩放"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_translate"
+            android:text="平移"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_skew"
+            android:text="倾斜"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_mirror"
+            android:text="镜像"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_shadow"
+            android:text="倒影"/>
+    </LinearLayout>
+
 </LinearLayout>
 </ScrollView>
